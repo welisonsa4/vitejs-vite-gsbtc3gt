@@ -1,0 +1,25 @@
+# Pacote de configuração do Claude — RadSaber
+
+Este pacote contém:
+- 7 Skills personalizadas, cada uma em sua pasta com `SKILL.md`.
+- 6 prompts iniciais para as conversas especializadas 00 a 05.
+
+## Instalar as Skills no Claude.ai
+1. Extraia o ZIP.
+2. Entre em Claude > Customize > Skills.
+3. Clique em `+` > `Create skill` > `Upload a skill`.
+4. Faça upload de um ZIP contendo a pasta de uma Skill (a pasta deve conter `SKILL.md`).
+5. Ative a Skill.
+6. Repita para as sete Skills.
+
+Se o Claude aceitar o pacote completo com múltiplas pastas, ainda assim recomendamos instalar cada Skill individualmente para facilitar a verificação e ativação.
+
+## Criar as conversas
+Abra cada arquivo da pasta `prompts_conversas`, crie uma nova conversa dentro do projeto RadSaber e envie o conteúdo como primeira mensagem. O usuário precisa criar as conversas manualmente; este pacote não tem acesso à conta Claude para criá-las.
+
+## Limites importantes
+- Skills personalizadas no claude.ai exigem execução de código habilitada.
+- Skills são procedimentos reutilizáveis, não subagentes autônomos.
+- As seis conversas são especializações com históricos separados; não compartilham automaticamente o histórico umas das outras.
+- Subagentes autônomos com delegação independente pertencem ao Claude Code/Agent SDK.
+- Não inclua segredos, tokens, credenciais ou dados de pacientes.
